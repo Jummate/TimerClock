@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Timer Clock</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="firstDisplay();">
+<audio style="display:none;"><source src="high_priority.wav"></audio>
+  <div class="main-container">
+  
+  <!-- ---------App Header------------------- -->
+    <header>
+      <img src="images/timer.png" alt="Timer Image">
+      <h1>Timer Clock</h1>
+    </header>
+	
+	<!-- ----------- Operational Area---------- -->
+    <main>
+      <div class="input-cont actionarea">
+        <input type="number" class="in" placeholder="HOUR" value="" id="hr">
+        <input type="number" class="in" placeholder="MIN" value="" id="min">
+        <input type="number" placeholder="SEC" class="in" value="" id="sec">
+      </div>
+      <div class="btn-cont actionarea">
+        <input type="button" class="btn-first btn" id="start" value="START">
+		<!--  Pause and Play button to be added in subsequent versions-->
+        <!--<input class="btn" type="button" id="pause" value="PAUSE/PLAY">-->
+		<input type="button" class="btn-last btn" id="reset" value="RESET">
+      </div>
+	  
+	  <!-- Timer Display Area-->
+      <div class="display">
+        <span></span>
+        </div>
+    </main>
+  </div>
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
